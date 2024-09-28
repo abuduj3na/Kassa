@@ -7,6 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Label Content="Ondernemingnummer" HorizontalAlignment="Left" Margin="140,130,0,0" VerticalAlignment="Top"/>
+        <Label Content="Prijs" HorizontalAlignment="Left" Margin="140,161,0,0" VerticalAlignment="Top"/>
+        <Label Content="Aantal" HorizontalAlignment="Left" Margin="140,192,0,0" VerticalAlignment="Top"/>
+        <Label Content="Te betalen" HorizontalAlignment="Left" Margin="140,223,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="VATNumberTextBox" HorizontalAlignment="Left" Margin="310,134,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="90"/>
+        <TextBox Name="priceTextBox" HorizontalAlignment="Left" Margin="310,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="amountTextBox" HorizontalAlignment="Left" Margin="310,196,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="amountToPayTextBox" HorizontalAlignment="Left" Margin="310,227,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="checkNumberTextBox" HorizontalAlignment="Left" Margin="410,134,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="20"/>
+        <Button x:Name="checkNumberButton" Content="Controle Nummer" HorizontalAlignment="Left" Margin="482,126,0,0" VerticalAlignment="Top" Width="133" Height="30" />
+        <Button x:Name="calculateButton" Content="Berekenen" HorizontalAlignment="Left" Margin="482,165,0,0" VerticalAlignment="Top" Width="133" Height="30" Click="calculateButton_Click"/>
+        <Button x:Name="clearButton" Content="Wissen" HorizontalAlignment="Left" Margin="482,205,0,0" VerticalAlignment="Top" Width="133" Height="30" Click="clearButton_Click"/>
+        <Button x:Name="closeButton" Content="Sluiten" Margin="482,245,185,0" VerticalAlignment="Top" Height="30" Click="closeButton_Click"/>
 
     </Grid>
 </Window>

@@ -44,5 +44,21 @@ namespace Kassa
         {
             Close();
         }
+
+        private void checkNumberButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+            
+            double teller;
+            double noemer = 97;
+            double mod;
+            double remainder;
+
+            teller = double.Parse(VATNumberTextBox.Text);
+            mod = teller % noemer;
+            remainder = noemer - mod;
+            checkNumberTextBox.Text = $"{remainder}";
+
+        }
     }
 }
